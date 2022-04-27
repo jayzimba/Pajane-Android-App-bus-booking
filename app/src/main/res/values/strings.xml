@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Pajane</string>
+
+    <string-array name="cities">
+        <item>Chadiza</item>
+        <item>Chama</item>
+        <item>Chambeshi</item>
+        <item>Chavuma</item>
+        <item>Chembe</item>
+        <item>Chibombo</item>
+        <item>Chiengi</item>
+        <item>Chilanga</item>
+        <item>Chililabombwe</item>
+        <item>Chilubi</item>
+        <item>Chingola</item>
+        <item>Chinsali</item>
+        <item>Chinyingi</item>
+        <item>Chipata</item>
+        <item>Chirundu</item>
+        <item>Chisamba</item>
+        <item>Choma</item>
+        <item>Gwembe</item>
+        <item>Isoka</item>
+        <item>Kabompo</item>
+        <item>Kabwe</item>
+        <item>Kafue</item>
+        <item>Kafulwe</item>
+        <item>Kalabo</item>
+        <item>Kalene Hill</item>
+        <item>Kalomo</item>
+        <item>Kalulushi</item>
+        <item>Kanyembo</item>
+        <item>Kaoma</item>
+        <item>Kapiri Mposhi</item>
+        <item>Kasama</item>
+        <item>Kasempa</item>
+        <item>Kashikishi</item>
+        <item>Kataba</item>
+        <item>Katete</item>
+        <item>Kawambwa</item>
+        <item>Kazembe</item>
+        <item>Kazungula</item>
+        <item>Kitwe</item>
+        <item>Livingstone</item>
+        <item>Luangwa</item>
+        <item>Luanshya</item>
+        <item>Lufwanyama</item>
+        <item>Lukulu</item>
+        <item>Lundazi</item>
+        <item>Lusaka</item>
+        <item>Macha Mission</item>
+        <item>Makeni4</item>
+        <item>Mansa</item>
+        <item>Mazabuka</item>
+        <item>Mbala</item>
+        <item>Mbereshi</item>
+        <item>Mfuwe</item>
+        <item>Milenge</item>
+        <item>Misisi</item>
+        <item>Mkushi</item>
+        <item>Mongu</item>
+        <item>Monze</item>
+        <item>Mpika</item>
+        <item>Mporokoso</item>
+        <item>Mpulungu</item>
+        <item>Mufulira</item>
+        <item>Mumbwa</item>
+        <item>Muyombe</item>
+        <item>Mwinilunga</item>
+        <item>Nakonde</item>
+        <item>Nchelenge</item>
+        <item>Ndola</item>
+        <item>Ngoma</item>
+        <item>Nkana</item>
+        <item>Nseluka</item>
+        <item>Pemba</item>
+        <item>Petauke</item>
+        <item>Samfya</item>
+        <item>Senanga</item>
+        <item>Serenje</item>
+        <item>Sesheke</item>
+        <item>Shiwa Ngandu</item>
+        <item>Siavonga</item>
+        <item>Sikalongo</item>
+        <item>Sinazongwe</item>
+        <item>Solwezi</item>
+        <item>Zambezi</item>
+        <item>Zimba</item>
+
+    </string-array>
+    <string name="title_activity_live_map">LiveMap</string>
+    <string name="mobileMoneyPolicy">Note that a transaction fee of <i><b>k2</b></i> will be charged directly from your account as you make approval of your payment.
+        Check your phone to complete approval by entering your pin once you click the pay now button below.
+    </string>
+
+    <string name="CardPolicy">Note that a transaction fee of <i><b>k5</b></i> will be charged directly from your account as you make approval of your payment.
+        ensure your card details are correct as you click the pay now button below.</string>
+
+    <string name="errorOnCancelCard">please minimize the card payment mode if its not your mode of payment</string>
+
+    <string name="passenger_policy"><b>Children: </b> will refer to persons between the age of 11 - 14 years old</string>
+
+    <string name="passenger_policy2"><b>Adults: </b> will refer to passengers above the age of 14 years old</string>
+    <string name="headingPolicy"><b><u>Passenger Policy</u></b></string>
+</resources>

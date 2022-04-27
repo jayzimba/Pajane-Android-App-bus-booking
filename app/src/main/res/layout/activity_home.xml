@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:orientation="horizontal"
+        android:paddingHorizontal="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="20dp">
+
+            <ImageView
+                android:id="@+id/ticketBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ticketbtn" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/locationicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/white"
+            android:src="@drawable/ic_baseline_location_on_24" />
+        <TextView
+            android:id="@+id/localityid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="2dp"
+            android:text="your locality"/>
+
+        <ImageView
+            android:id="@+id/toandfrombtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_baseline_compare_arrows_24" />
+        
+        
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/destination"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:text="destination city"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            style="@style/ThemeOverlay.Material3.TextInputEditText" />-->
+
+
+        <Spinner
+            android:id="@+id/spinner_cities"
+            style="@android:style/Widget.Holo.Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:spinnerMode="dialog"
+            />
+
+        <ImageView
+            android:id="@+id/helpbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_help" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbg"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp"
+        android:elevation="7dp"
+        tools:layout_editor_absoluteY="160dp">
+
+
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:id="@+id/car"
+                  android:padding="7dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/car"
+                  app:tint="@color/purple_700"
+                  android:layout_weight="1"/>
+              <ImageView
+                  android:id="@+id/plane"
+                  android:padding="7dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/plane"
+                  app:tint="@color/purple_700"
+                  android:layout_weight="1"/>
+              <ImageView
+                  android:id="@+id/bus"
+                  android:padding="7dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/bus"
+                  app:tint="@color/purple_700"
+                  android:layout_weight="1"
+                  android:background="@drawable/active"/>
+              <ImageView
+                  android:id="@+id/train"
+                  android:padding="7dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/train"
+                  app:tint="@color/purple_700"
+                  android:layout_weight="1"/>
+
+          </LinearLayout>
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="with pajane, you can search for your bus by name or destination."
+            android:textColor="#61688b"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEPARTURE DATE"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tue, 28 May"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/purple_700"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_today_24"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="3dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TODAY"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/orange"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollIndicators="none"
+         android:scrollbars="none">
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginHorizontal="3dp">
+
+                 <View
+                     android:layout_marginRight="3dp"
+                     android:layout_width="8dp"
+                     android:layout_height="8dp"
+                     android:background="@drawable/active"
+                     />
+
+                 <TextView
+                     android:id="@+id/nextDeparturetxt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/poppins"
+                     android:text="Next departure"
+                     android:layout_marginRight="5dp"
+                     android:textColor="@color/grey" />
+
+                 <TextView
+                     android:id="@+id/Nseealltxt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/poppins"
+                     android:layout_weight="1"
+                     android:gravity="end"
+                     android:textSize="14sp"
+                     android:text="See All"
+                     android:textColor="@android:color/holo_blue_dark" />
+
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/busRecyclerView"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="2dp"
+                     android:orientation="horizontal"
+                     android:scrollIndicators="none"
+                     tools:listitem="@layout/busonlist" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="12dp"
+                 android:layout_marginBottom="14dp"
+                 android:layout_marginHorizontal="3dp">
+
+                 <View
+                     android:layout_marginRight="3dp"
+                     android:layout_width="8dp"
+                     android:layout_height="8dp"
+                     android:background="@drawable/deactive"
+                     />
+
+                 <TextView
+                     android:id="@+id/departedtxt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/poppins"
+                     android:text="Departed"
+                     android:textColor="@color/grey" />
+
+                 <TextView
+                     android:id="@+id/Dseealltxt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/poppins"
+                     android:layout_weight="1"
+                     android:gravity="end"
+                     android:textSize="14sp"
+                     android:text="See All"
+                     android:textColor="@android:color/holo_blue_dark" />
+
+
+             </LinearLayout>
+
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+
+                     <androidx.recyclerview.widget.RecyclerView
+                         android:id="@+id/departedRecyclerView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginHorizontal="2dp"
+                         android:orientation="horizontal"
+                         android:scrollIndicators="none"
+                         tools:listitem="@layout/busonlist" />
+
+
+
+                 </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="12dp"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginHorizontal="3dp">
+
+                 <View
+                     android:layout_marginRight="3dp"
+                     android:layout_width="12dp"
+                     android:layout_height="12dp"
+                     android:background="@drawable/ic_live_maps"
+                     />
+
+                 <TextView
+                     android:id="@+id/livemapstxt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/poppins"
+                     android:text="Live map"
+                     android:textColor="@color/grey" />
+
+                 <TextView
+                     android:id="@+id/Viewtxt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/poppins"
+                     android:layout_weight="1"
+                     android:gravity="end"
+                     android:textSize="14sp"
+                     android:text="View"
+                     android:textColor="@android:color/holo_blue_dark" />
+
+
+
+             </LinearLayout>
+
+             <View
+                 android:layout_marginHorizontal="15dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="400dp">
+
+             </View>
+
+         </LinearLayout>
+     </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

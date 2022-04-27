@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1064660449683",
+    "firebase_url": "https://pajane-22086-default-rtdb.firebaseio.com",
+    "project_id": "pajane-22086",
+    "storage_bucket": "pajane-22086.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064660449683:android:0bd43f7fe42e3362a35066",
+        "android_client_info": {
+          "package_name": "www.pajane.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064660449683-hlij1mbo4l5uu29s511s7q13g03a3fe8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuwIZMTidN1bkuoaQvrhinNkX5Oaskm9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064660449683-hlij1mbo4l5uu29s511s7q13g03a3fe8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

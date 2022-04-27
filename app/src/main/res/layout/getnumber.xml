@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dialogbg"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_700"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contactInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mobile money number"
+        app:prefixText="+26"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:prefixTextColor="@color/purple_700"
+        android:textColorHint="@color/purple_700"
+        app:startIconTint="@color/purple_700"
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="16sp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:text="you will receive a verification OTP message on your phone"
+        android:textSize="16sp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundTint="@color/purple_700"
+            android:progressTint="@color/purple_700"
+            android:visibility="invisible"
+            tools:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/comfirmpayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/comfirmpay" />
+
+    </FrameLayout>
+
+</LinearLayout>
